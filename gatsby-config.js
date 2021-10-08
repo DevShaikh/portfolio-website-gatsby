@@ -1,26 +1,9 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
-
+// gatsby-config.js
 module.exports = {
-  /* Your site config here */
-  plugins: [
-    {
-      resolve: "@chakra-ui/gatsby-plugin",
-      options: {
-        /**
-         * @property {boolean} [resetCSS=true]
-         * if false, this plugin will not use `<CSSReset />
-         */
-        resetCSS: true,
-        /**
-         * @property {boolean} [isUsingColorMode=true]
-         * if false, this plugin will not use <ColorModeProvider />
-         */
-        isUsingColorMode: true,
-      },
-    },
-  ],
+  plugins: ["@chakra-ui/gatsby-plugin"],
+  siteMetadata: {
+    title: "Ahmed Shaikh",
+    description: "My portfolio website",
+    copyright: "Copyright 2021 - Ahmed Shaikh",
+  },
 }
