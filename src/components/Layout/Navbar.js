@@ -2,18 +2,30 @@
 import React from "react"
 
 // Gatsby
-import { Link } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 
 // Chakra-UI
 import { Box, Heading, Container, Flex, Button } from "@chakra-ui/react"
 
 const Navbar = () => {
+  const data = useStaticQuery(graphql`
+    query SiteInfo {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+
+  const { title } = data.site.siteMetadata
+
   return (
-    <Box py="2">
+    <Box py="2" mt="4">
       <Container maxW="1200px">
         <Flex justifyContent="space-between">
           <Box>
-            <Heading>Ahmed Shaikh</Heading>
+            <Heading>{title}</Heading>
           </Box>
           <Flex justifyContent="space-between" alignItems="center">
             <Button variant="navLink">

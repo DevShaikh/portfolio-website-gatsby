@@ -8,7 +8,7 @@ import { Button } from "@chakra-ui/button"
 
 export default function Home() {
   return (
-    <Flex alignItems="center" height="82vh" justifyContent="space-between">
+    <Flex alignItems="center" height="81vh" justifyContent="space-between">
       <Box width="45%">
         <Box mb="4">
           <Heading size="3xl" fontWeight="bold">
@@ -22,7 +22,10 @@ export default function Home() {
         <Button variant="primary">My Portfolio & Projects</Button>
       </Box>
       <Box width="55%">
-        <Image src="/svg/portfolio.svg" />
+        <Image
+          src="/svg/portfolio.svg"
+          filter="drop-shadow(2px 4px 6px black) drop-shadow(2px 4px 4px #00000075)"
+        />
       </Box>
     </Flex>
   )

@@ -16,7 +16,7 @@ body {
     at top left,
     rgba(146, 43, 225, 1) 0%,
     rgba(43, 9, 107, 1) 100%
-  );
+  ) !important;
   background-repeat: no-repeat;
 }
 p {

@@ -37,7 +37,7 @@ const buttonStyles = {
       borderRadius: "none",
       borderBottom: "2px solid transparent",
       _hover: {
-        borderBottom: "2px solid #fff",
+        borderColor: "#fff",
       },
     }),
   },
