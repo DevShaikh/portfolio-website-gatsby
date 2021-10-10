@@ -29,7 +29,7 @@ const Navbar = () => {
           </Box>
           <Flex justifyContent="space-between" alignItems="center">
             <Button variant="navLink">
-              <Link to="/home">Home</Link>
+              <Link to="/">Home</Link>
             </Button>
             <Button variant="navLink">
               <Link to="/projects">Projects</Link>
