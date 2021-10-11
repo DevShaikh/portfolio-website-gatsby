@@ -35,7 +35,7 @@ const Navbar = () => {
     <Box py="2" mt="4">
       <SideNav isOpen={isOpen} onClose={onClose} />
       <Container maxW="1200px">
-        <Flex justifyContent="space-between">
+        <Flex justifyContent="space-between" width="100%">
           <Box>
             <Heading>{title}</Heading>
           </Box>
