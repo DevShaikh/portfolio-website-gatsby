@@ -35,7 +35,13 @@ const Navbar = () => {
     <div style={{ padding: "8px: 0px", marginBottom: "16px" }}>
       <SideNav isOpen={isOpen} onClose={onClose} />
       <Container maxW="1200px">
-        <Flex justifyContent="space-between" width="100%">
+        <div
+          style={{
+            display: "flex",
+            width: "100%",
+            justifyContent: "space-between",
+          }}
+        >
           <Box>
             <Heading>{title}</Heading>
           </Box>
@@ -64,7 +70,7 @@ const Navbar = () => {
               {"="}
             </Button>
           </Box>
-        </Flex>
+        </div>
       </Container>
     </div>
   )
