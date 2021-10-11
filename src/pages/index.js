@@ -20,7 +20,7 @@ const Home = () => {
         ]}
         flexDir={["column", "column", "row", "row"]}
       >
-        <Box className="avoid_conflict" width="45%">
+        <Box style={{ width: "45%" }}>
           <Box mb="4">
             <Heading size="3xl" fontWeight="bold">
               Design
