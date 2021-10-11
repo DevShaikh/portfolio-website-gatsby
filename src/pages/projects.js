@@ -7,6 +7,7 @@ import { Button } from "@chakra-ui/button"
 
 // Projects
 import projectsData from "../data/projects"
+import { Link } from "gatsby"
 
 const projects = () => {
   return (
@@ -29,16 +30,19 @@ const projects = () => {
         py="8"
         gap="8"
       >
-        {projectsData.map((project, key) => (
-          <Box key={key} textAlign="center" my="4">
-            <Image src={project.image} mb="4" />
-            <a rel="noreferrer" target="_blank" href={project.link}>
-              <Button variant="link">
-                <Heading size="md">{project.title}</Heading>
-              </Button>
-            </a>
-          </Box>
-        ))}
+        {projectsData.map((project, key) => {
+          const slug = project.title.split(" ").join("-").toLowerCase()
+          return (
+            <Box key={key} textAlign="center" my="4">
+              <Link to={`/projects/${slug}`}>
+                <Image src={project.image} mb="4" />
+                <Button variant="link">
+                  <Heading size="md">{project.title}</Heading>
+                </Button>
+              </Link>
+            </Box>
+          )
+        })}
       </Grid>
     </Box>
   )

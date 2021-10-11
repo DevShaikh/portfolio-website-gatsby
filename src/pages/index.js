@@ -5,6 +5,7 @@ import React from "react"
 import { Box, Flex, Heading, Text } from "@chakra-ui/layout"
 import { Image } from "@chakra-ui/image"
 import { Button } from "@chakra-ui/button"
+import { Link } from "gatsby"
 
 export default function Home() {
   return (
@@ -19,7 +20,9 @@ export default function Home() {
           </Heading>
           <Text>Jr. Fullstack web developer based in Pakistan.</Text>
         </Box>
-        <Button variant="primary">My Portfolio & Projects</Button>
+        <Link to="/projects">
+          <Button variant="primary">My Portfolio & Projects</Button>
+        </Link>
       </Box>
       <Box width="55%">
         <Image

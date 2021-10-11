@@ -7,6 +7,9 @@
   font-family: "Sora";
   color: white;
 }
+*:focus {
+  box-shadow: none !important;
+}
 html,
 body {
   min-height: 100%;

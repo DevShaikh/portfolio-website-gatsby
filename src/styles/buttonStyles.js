@@ -35,7 +35,7 @@ const buttonStyles = {
       background: "none",
       color: "white",
       borderRadius: "none",
-      borderBottom: "2px solid transparent",
+      borderBottom: "3px solid transparent",
       _hover: {
         borderColor: "#fff",
       },
