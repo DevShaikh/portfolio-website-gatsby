@@ -32,8 +32,7 @@ const Navbar = () => {
   const { title } = data.site.siteMetadata
 
   return (
-    <div style={{ padding: "8px: 0px", marginBottom: "16px" }}>
-      <SideNav isOpen={isOpen} onClose={onClose} />
+    <div style={{ padding: "8px 0px", marginBottom: "16px" }}>
       <Container maxW="1200px">
         <div
           style={{
@@ -72,6 +71,7 @@ const Navbar = () => {
           </Box>
         </div>
       </Container>
+      <SideNav isOpen={isOpen} onClose={onClose} />
     </div>
   )
 }
