@@ -12,7 +12,12 @@ const Home = () => {
     <Box height="81vh">
       <Flex
         alignItems="center"
-        justifyContent="space-between"
+        justifyContent={[
+          "flex-start",
+          "flex-start",
+          "space-between",
+          "space-between",
+        ]}
         flexDir={["column", "column", "row", "row"]}
       >
         <Box width="45%">

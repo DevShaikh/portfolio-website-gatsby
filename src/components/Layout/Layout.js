@@ -15,9 +15,9 @@ const Layout = ({ children }) => {
   return (
     <Box width="100%">
       <Navbar />
-      <Box>
-        <Container maxW="1200px">{children}</Container>
-      </Box>
+      <Container maxW="1200px">
+        <Box>{children}</Box>
+      </Container>
       <Footer />
     </Box>
   )
