@@ -7,7 +7,7 @@ import { Image } from "@chakra-ui/image"
 import { Button } from "@chakra-ui/button"
 import { Link } from "gatsby"
 
-export default function Home() {
+const Home = () => {
   return (
     <Box height="81vh">
       <Flex alignItems="center" justifyContent="space-between">
@@ -25,7 +25,7 @@ export default function Home() {
             <Button variant="primary">My Portfolio & Projects</Button>
           </Link>
         </Box>
-        <Box style={{ width: "45%" }}>
+        <Box width="55%">
           <Image
             src="/svg/portfolio.svg"
             filter="drop-shadow(2px 4px 6px black) drop-shadow(2px 4px 4px #00000075)"
@@ -35,3 +35,4 @@ export default function Home() {
     </Box>
   )
 }
+export default Home
