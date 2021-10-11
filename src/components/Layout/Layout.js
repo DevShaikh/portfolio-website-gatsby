@@ -13,7 +13,7 @@ import "../../styles/app.css"
 
 const Layout = ({ children }) => {
   return (
-    <Box>
+    <Box width="100%">
       <Navbar />
       <Container maxW="1200px">{children}</Container>
       <Footer />
