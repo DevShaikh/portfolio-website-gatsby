@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
   return (
     <div style={{ height: "100%" }}>
       <Navbar />
-      <Container maxW="1200px">
+      <Container maxW="1200px" minH="79vh">
         <Box>{children}</Box>
       </Container>
       <Footer />

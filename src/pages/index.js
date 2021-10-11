@@ -9,7 +9,7 @@ import { Link } from "gatsby"
 
 const Home = () => {
   return (
-    <div style={{ height: "81vh" }}>
+    <div>
       <Flex
         alignItems="center"
         justifyContent={[
@@ -20,7 +20,7 @@ const Home = () => {
         ]}
         flexDir={["column", "column", "row", "row"]}
       >
-        <Box style={{ width: "45%" }}>
+        <Box width={["100%", "100%", "45%", "45%"]}>
           <Box mb="4">
             <Heading size="3xl" fontWeight="bold">
               Design
@@ -34,7 +34,7 @@ const Home = () => {
             <Button variant="primary">My Portfolio & Projects</Button>
           </Link>
         </Box>
-        <Box width="55%">
+        <Box width={["100%", "100%", "55%", "55%"]}>
           <Image
             src="/svg/portfolio.svg"
             filter="drop-shadow(2px 4px 6px black) drop-shadow(2px 4px 4px #00000075)"
