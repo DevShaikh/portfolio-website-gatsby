@@ -5,9 +5,9 @@ const { default: Layout } = require("./src/components/Layout/Layout")
 const { default: theme } = require("./src/styles/theme")
 
 // Wraps every page in a component
-exports.wrapPageElement = ({ element }) => {
+exports.wrapPageElement = ({ element, props }) => {
   return (
-    <ChakraProvider theme={theme}>
+    <ChakraProvider theme={theme} {...props}>
       <Layout>{element}</Layout>
     </ChakraProvider>
   )
