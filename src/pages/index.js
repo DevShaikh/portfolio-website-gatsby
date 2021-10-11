@@ -10,7 +10,11 @@ import { Link } from "gatsby"
 const Home = () => {
   return (
     <Box height="81vh">
-      <Flex alignItems="center" justifyContent="space-between">
+      <Flex
+        alignItems="center"
+        justifyContent="space-between"
+        flexDir={["column", "column", "row", "row"]}
+      >
         <Box width="45%">
           <Box mb="4">
             <Heading size="3xl" fontWeight="bold">
