@@ -25,7 +25,7 @@ export default function Home() {
             <Button variant="primary">My Portfolio & Projects</Button>
           </Link>
         </Box>
-        <Box width="55%">
+        <Box style={{ width: "45%" }}>
           <Image
             src="/svg/portfolio.svg"
             filter="drop-shadow(2px 4px 6px black) drop-shadow(2px 4px 4px #00000075)"
