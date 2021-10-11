@@ -32,7 +32,7 @@ const Navbar = () => {
   const { title } = data.site.siteMetadata
 
   return (
-    <Box py="2" mt="4">
+    <div style={{ padding: "8px: 0px", marginBottom: "16px" }}>
       <SideNav isOpen={isOpen} onClose={onClose} />
       <Container maxW="1200px">
         <Flex justifyContent="space-between" width="100%">
@@ -66,7 +66,7 @@ const Navbar = () => {
           </Box>
         </Flex>
       </Container>
-    </Box>
+    </div>
   )
 }
 

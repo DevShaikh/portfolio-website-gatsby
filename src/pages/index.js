@@ -9,7 +9,7 @@ import { Link } from "gatsby"
 
 const Home = () => {
   return (
-    <Box height="81vh">
+    <div style={{ height: "81vh" }}>
       <Flex
         alignItems="center"
         justifyContent={[
@@ -41,7 +41,7 @@ const Home = () => {
           />
         </Box>
       </Flex>
-    </Box>
+    </div>
   )
 }
 export default Home
